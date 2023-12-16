@@ -6,11 +6,12 @@ import scipy
 from sklearn.neighbors import KDTree
 import networkx as nx
 import bezier
-import gibberish
+from gibberish import Gibberish
 import logging
 from collections import OrderedDict, Counter
 from tqdm import tqdm
 
+gibberish = Gibberish()
 logger = logging.getLogger(__name__)
 
 from .types import GraphSpec, NodeSpec, EdgeSpec, LineSpec

@@ -285,21 +285,21 @@ question_forms = [
 		"NearestStationArchitecture",
 		group="MultiStep"),
 
-	QuestionForm(
-		[Station, Station],
-		"How many distinct routes are there between {} and {}?",
-		lambda n1, n2: Count(Paths(n1, n2)),
-		"DistinctRoutes",
-		arguments_valid=lambda g, n1, n2: n1 != n2,
-		group="MultiStep"),
+	# QuestionForm(
+	# 	[Station, Station],
+	# 	"How many distinct routes are there between {} and {}?",
+	# 	lambda n1, n2: Count(Paths(n1, n2)),
+	# 	"DistinctRoutes",
+	# 	arguments_valid=lambda g, n1, n2: n1 != n2,
+	# 	group="MultiStep"),
 
 
-	QuestionForm(
-		[Station],
-		"Is {} part of a cycle?",
-		lambda n1: HasCycle(n1),
-		"HasCycle",
-		group="MultiStep"),
+	# QuestionForm(
+	# 	[Station],
+	# 	"Is {} part of a cycle?",
+	# 	lambda n1: HasCycle(n1),
+	# 	"HasCycle",
+	# 	group="MultiStep"),
 
 	# --------------------------------------------------------------------------
 

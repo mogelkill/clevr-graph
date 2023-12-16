@@ -31,7 +31,7 @@ if __name__ == "__main__":
 	else:
 		name = uuid.uuid4()
 
-	total_gqa = args.count * 1000
+	total_gqa = args.count
 	if args.just_one:
 		total_gqa = 1
 
